@@ -1,0 +1,19 @@
+{
+  "name": "jira-story-scheduler",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/m-thompson-code/jira-story-scheduler.git"
+  },
+  "bugs": {
+      "url": "https://github.com/m-thompson-code/jira-story-scheduler/issues"
+  },
+  "homepage": "https://m-thompson-code.github.io/jira-story-scheduler/",
+  "author": "Mark Thompson",
+  "keywords": [
+      "jira",
+      "story",
+      "scheduling"
+  ]
+}

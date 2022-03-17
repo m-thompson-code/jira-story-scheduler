@@ -1,1 +1,47 @@
-<jira-story-scheduler-nx-welcome></jira-story-scheduler-nx-welcome>
+<ng-container *ngIf="bucketsUI$ | async as buckets; else loading">
+    <div class="buckets">
+      <div *ngFor="let bucket of buckets; trackBy: trackByIndex" class="issues" [style.width]="bucketsWidth$ | async">
+        <div *ngFor="let issue of bucket.issues; trackBy: trackByCapturedIssue" [ngClass]="{
+          issue:true, 
+          'hovered': issue.hovered,
+          'clicked': issue.clicked,
+          'is-dependent': issue.isDependent,
+          'has-dependency': issue.hasDependency
+        }"
+        [style.width]="issue.width" [style.left]="issue.horizontalOffset"
+        (mouseenter)="handleHover(issue)"
+        (mouseleave)="handleHover(null)"
+        (click)="handleClick(issue)"
+        >
+          <div class="issue-overlay" [style.background]="(issue.value.epic && epicColors[issue.value.epic]) ?? '#90A4AE'">
+            <div [ngClass]="{
+              'issue-overlay-highlight':true,
+              'hovered': issue.hovered,
+              'clicked': issue.clicked,
+              'is-dependent': issue.isDependent,
+              'has-dependency': issue.hasDependency
+            }"></div>
+          </div>
+    
+          <div class="issue-padding">
+            <div class="links"><a [href]="'https://jira.empoweredbenefits.com/browse/' + issue.value.key" target="_blank">{{ issue.value.key }}</a> &lt; <a [href]="'https://jira.empoweredbenefits.com/browse/' + issue.value.epic" target="_blank">{{ issue.value.epic }}</a></div>
+            <div class="summary">{{ issue.value.summary }}</div>
+            <div>Pts: {{ issue.value.points }}</div>
+          </div>
+        </div>
+      </div>
+    
+      <div *ngFor="let marker of pointMarkers$ | async; trackBy: trackByIndex" [ngClass]="{'marker': true, 'has-sprint': !!marker.sprint }" [style.left]="marker.position">
+        <div class="points">
+          {{ marker.points }}
+          <div *ngIf="marker.sprint" class="sprint">Sprint {{ marker.sprint }}</div>
+        </div>
+      </div>
+    </div>
+    <button class="temp-download" (click)="download(buckets)">Download</button>
+  </ng-container>
+  
+  <ng-template #loading><ng-container *ngIf="isLoading">Loading . . .</ng-container></ng-template>
+  
+  <demo-uploader (filesUploaded)="handleFilesUploaded($event)"></demo-uploader>
+  

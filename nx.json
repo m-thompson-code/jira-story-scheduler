@@ -1,5 +1,5 @@
 {
-  "npmScope": "jira-story-scheduler",
+  "npmScope": "jira-story-scheduler-project",
   "affected": {
     "defaultBase": "main"
   },
@@ -16,9 +16,15 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "OTEwNzdjMmEtMTNjMC00OWZjLTljYmMtNzY0OGIzYzY5N2RlfHJlYWQtd3JpdGU="
       }
     }
   },

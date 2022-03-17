@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "jira-story-scheduler",
+            "prefix": "demo",
             "style": "kebab-case"
           }
         ]

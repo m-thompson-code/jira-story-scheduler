@@ -1,0 +1,45 @@
+{
+  "root": "libs/jira-story-scheduler",
+  "sourceRoot": "libs/jira-story-scheduler/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/libs/jira-story-scheduler",
+        "main": "libs/jira-story-scheduler/src/index.ts",
+        "tsConfig": "libs/jira-story-scheduler/tsconfig.lib.json",
+        "assets": [
+          "libs/jira-story-scheduler/*.md"
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/jira-story-scheduler/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/jira-story-scheduler"
+      ],
+      "options": {
+        "jestConfig": "libs/jira-story-scheduler/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": [
+    "scheduler"
+  ]
+}
