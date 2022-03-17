@@ -1,0 +1,62 @@
+key,points,priority,summary,sprint,assignee,status,epic,type,dependencies
+MON-98175,5,Medium,Tobacco status,,tperumandla,To Do,MON-98171,Story,MON-106149
+MON-98174,5,Medium,Aflac Policy Fee,,tperumandla,Ready to Work,MON-98171,Story,
+MON-98171,12,Medium,Sync effort: Aflac Life policy fee and tobacco status,,tperumandla,To Do,,Epic,
+MON-98169,3,Medium,"Order plans in a product by display order, name",,,Ready to Work,MON-76242,Story,
+MON-98076,5,Medium,TODOS - [Products Container],,ysarjapur,To Do,MON-76244,Story,
+MON-98075,3,Medium,TODOS - [Plan Offering Pricing],,mthompson,To Do,MON-76244,Story,"MON-72181, MON-98175, MON-72183"
+MON-98074,1,High,TODOS - [Plan Offering],Shop Page Rewrite: Sprint 12,mthompson,In Progress,MON-76244,Story,
+MON-98066,3,High,TODOS - [Riders],,mthompson,To Do,MON-76244,Story,"MON-74666, MON-102260, MON-102257"
+MON-98010,1,Medium,TODOS - [Import Aflac Policies],,mpatel,To Do,MON-76244,Story,
+MON-98007,2,Medium,TODOS - [Plan Year],,vkalavakuru,To Do,MON-76244,Story,"MON-74666, MON-102260, MON-102257"
+MON-98000,1,High,TODOS - [Dual Year],Shop Page Rewrite: Sprint 12,sharish,In Progress,MON-76244,Story,
+MON-97254,3,High,"Correct Zero State message and 'Build benefits offering' button must be shown when Benefit Offering is not set up for the account, and user clicks Shop for an employee",Shop Page Rewrite: Sprint 12,sravichandran,Ready to Work,MON-76242,Bug,"MON-106147, MON-102454"
+MON-91265,1,Medium,"Coverage Option in plan card does not remains selected, resets to default Individual Coverage",,mthompson,Ready to Work,MON-76242,Bug,
+MON-91085,3,Medium,AG Reductions,Shop Page Rewrite: Sprint 12,vdhamodharan,Ready to Test,MON-72171,Story,"MON-72790, MON-74669, MON-74672"
+MON-84711,3,Medium,Performance Improvement - planOfferings call optimization for each product.,,vkalavakuru,In Progress,MON-76239,Story,
+MON-78237,5,Critical,Previous user enrollment state getting persisted for headset enrollment,,mthompson,Ready to Work,MON-76242,Bug,
+MON-76407,3,Medium,Tech Debt: Do not call getApprovalRequests during load of Shop page,,vkalavakuru,To Do,MON-76244,Story,
+MON-76244,,Medium,Tech Debt Tickets for Shop Page Rewrite,,ysarjapur,To Do,,Epic,
+MON-76242,,Medium,Regression Testing Defects for Shop Page Rewrite,,vsubramanian,To Do,,Epic,
+MON-76150,3,Medium,Form elements such as checkboxes appear clickable outside of its text but doesn't actually do anything,,tyoung,To Do,MON-76244,Bug,
+MON-75003,3,Medium,Tech Debt: NgRx Actions + Effects + Reducer + Selectors,,sharish,To Do,MON-72169,Story,
+MON-75001,3,Medium,Tech Debt: NgRx Actions + Effects + Reducer + Selectors,Shop Page Rewrite: Sprint 12,mpatel,Ready to Work,MON-72183,Story,
+MON-74999,3,Medium,Tech Debt: NgRx Actions + Effects + Reducer + Selectors,,mpatel,To Do,MON-72185,Story,
+MON-74819,3,Medium,Tech Debt: Basic UI layout,,stabreez,To Do,MON-72185,Story,
+MON-74783,2,Medium,Tech Debt: Basic UI layout,Shop Page Rewrite: Sprint 12,stabreez,In Review,MON-72169,Story,
+MON-74742,3,Medium,Aflac Reinstatements - Optional,,cguria,Ready to Work,MON-72169,Story,"MON-72796, MON-75003, MON-74783"
+MON-74740,3,Medium,Update dependent age,Shop Page Rewrite: Sprint 12,mpatel,In Progress,MON-72183,Story,MON-75001
+MON-74672,3,Medium,AG Buyups,Shop Page Rewrite: Sprint 12,vdhamodharan,Ready to Test,MON-72171,Story,"MON-72790, MON-74669"
+MON-74669,5,Medium,AI - Buy-ups,Shop Page Rewrite: Sprint 12,eaboudi,Ready to Test,MON-72171,Story,MON-72790
+MON-74666,5,Medium,Stackable Plans with rider selection,Shop Page Rewrite: Sprint 7,vkalavakuru,In Progress,MON-72181,Story,
+MON-72810,5,Medium,Display Bucket Plans,,ysarjapur,Ready to Work,MON-72185,Story,"MON-74819, MON-74999"
+MON-72796,5,Medium,Aflac Reinstatements - Mandatory,,cguria,Ready to Work,MON-72169,Story,"MON-75003, MON-74783"
+MON-72794,5,Medium,Juvenile Life Plans,,sharish,Ready to Work,MON-72183,Story,"MON-75001, MON-74740"
+MON-72790,5,Medium,AI - Additional Units,Shop Page Rewrite: Sprint 11,naggarwal,Ready to Test,MON-72171,Story,MON-74666
+MON-72185,8,Medium,Bucket Plans,,tperumandla,To Do,,Epic,
+MON-72183,10,Medium,Juvenile Plans / Dependent Only Plans,,cguria,Development,,Epic,
+MON-72181,8,Medium,Stackable Plan,,cguria,Development,,Epic,
+MON-72171,9,Medium,Additional Units / Buyups,,cguria,Development,,Epic,
+MON-72169,13,Medium,Reinstatement,,cguria,Development,,Epic,
+MON-72055,,Medium,Engineering Architecture Setup,,dluz,To Do,,Epic,
+MON-108354,,Medium,Coverage price zero for  STD/Hospital plans || Coverage level name showing as enrolled ,TPI POD1: Sprint6,sjha,Ready to Work,,Bug,
+MON-108336,1,High,Employer Contribution is wrong when Editing the Enrolled plan,,mpatel,Ready to Work,MON-76242,Bug,
+MON-107963,2,High,MON-74669_MON-SBX_Buyup > Benefit amount mismatch for “Cancer Screening and Annual Care Benefit Rider Buy Up” is there between SBX and Dev,,dbhushan,To Do,MON-72171,Bug,MON-74669
+MON-107239,1,High,Decline coverage button is appearing for Enrolled Plans for Payroll,Shop Page Rewrite: Sprint 12,mpatel,Ready to Work,MON-76242,Bug,
+MON-106149,1,Medium,Tobacco checkbox is not checked in the more settings if the user has Tobacco yes in profile,Shop Page Rewrite: Sprint 12,ysarjapur,Ready to Work,MON-76242,Bug,
+MON-106147,2,Medium,"Zero State - OE is in the future, no past plan year exist, message is not as expected",Shop Page Rewrite: Sprint 12,agangadhar,In Progress,MON-76242,Bug,MON-102454
+MON-102454,1,Medium,"When coverage period is ended ,  wrong button is shown in SBX",,dluz,Ready to Work,MON-76242,Bug,
+MON-102453,1,Medium,"When Employee Age requirements are not met, wrong button is shown in SBX",,dluz,Ready to Work,MON-76242,Bug,
+MON-102260,1,High,Unable to add Riders for the WL/TL plan already in cart,Shop Page Rewrite: Sprint 12,vkalavakuru,Ready to Work,MON-72181,Bug,"MON-74666, MON-102257"
+MON-102257,1,Medium,Riders selected for one of WL plan is getting selected for other WL plan,,vkalavakuru,Ready to Work,MON-72181,Bug,MON-74666
+MON-101415,3,Medium,Improve pipelines to better handle cache for front end,,,To Do,MON-101400,Story,
+MON-101413,1,Medium,Merge into release,,,To Do,MON-101400,Story,"MON-101409, MON-101411, MON-76242"
+MON-101411,2,Medium,Merge into QA5,,,To Do,MON-101400,Story,MON-101407
+MON-101409,1,Medium,Merge into develop branch,,,To Do,MON-101400,Story,MON-101411
+MON-101407,2,Medium,Frontend needs to route based on Config,Shop Page Rewrite: Sprint 12,mthompson,Ready to Work,MON-101400,Story,
+MON-101400,,Medium,Old Shop / New Shop Integration,,ysarjapur,To Do,,Epic,
+MON-101296,1,Medium,Proper Elimination Period Dropdown reset behavior,,mthompson,To Do,MON-101287,Story,MON-101294
+MON-101294,1,Medium,Proper Benefit Amounts dropdown reset behavior,,mthompson,To Do,MON-101287,Story,
+MON-101292,1,Medium,Proper Riders dropdown reset behavior,,mthompson,To Do,MON-101287,Story,"MON-101294, MON-101296"
+MON-101290,5,Low,Enrollment Settings Dropdown,,mthompson,To Do,MON-101287,Story,"MON-101296, MON-101294, MON-101292, MON-106149"
+MON-101287,8,Medium,Overall Dropdown Reset Behavior,,mthompson,To Do,,Epic,
