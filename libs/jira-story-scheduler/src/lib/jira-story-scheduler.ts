@@ -1,4 +1,4 @@
-import { getAllCapturedIssues, getBuckets } from './buckets';
+import { getBuckets } from './buckets';
 import { fromCsv, fromJson } from './builder';
 import { moo2 } from './issues';
 import { IssueMap, EpicMap, Bucket, RawIssue } from './jira-story-scheduler.model';
