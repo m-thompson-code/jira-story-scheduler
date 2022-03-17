@@ -10,19 +10,21 @@ export const getEmptyBuckets = (bucketCount: number): Bucket[] => {
     }));
 }
 
-export const getBuckets = (issueMap: IssueMap, epicMap: EpicMap, count: number): Bucket[] =>{
+export const getBuckets = (issueMap: IssueMap, epicMap: EpicMap, count: number, pointsPerSprint: number): Bucket[] =>{
     validateIssues(issueMap, epicMap);
 
     return fillBuckets(
         getArrayFromMap(issueMap).filter((issue) => issue.type !== IssueType.EPIC),
-        getEmptyBuckets(count)
+        getEmptyBuckets(count),
+        pointsPerSprint
     );
 }
   
-export const fillBuckets = (issues: Issue[], buckets: Bucket[], minimumGapBetweenIssues = 0): Bucket[] => {
+export const fillBuckets = (issues: Issue[], buckets: Bucket[], pointsPerSprint: number, minimumGapBetweenIssues = 0): Bucket[] => {
         const sortedIssues = issues.slice(0).sort(compareIssueDependencies);
     
         if (!sortedIssues.length) {
+            addSprintsToBucket(buckets, pointsPerSprint);
             return buckets;
         }
     
@@ -94,6 +96,7 @@ export const fillBuckets = (issues: Issue[], buckets: Bucket[], minimumGapBetwee
                 weightBefore,
                 value: issue,
                 weightAfter: filteredBucket.weight,
+                sprint: -1,
             });
         
             pushedIssueToBucket = true;
@@ -101,9 +104,9 @@ export const fillBuckets = (issues: Issue[], buckets: Bucket[], minimumGapBetwee
             instantAddMaximumGapTolerance = 0;
         });
   
-    return fillBuckets(issuesToAddInNextLoop, buckets, _minimumGapBetweenIssues + 1);
+    return fillBuckets(issuesToAddInNextLoop, buckets, pointsPerSprint, _minimumGapBetweenIssues + 1);
 }
-  
+
 export const getAllCapturedIssues = (buckets: Bucket[]): CapturedIssue[] => {
     return buckets.map((bucket) => bucket.issues).flat();
 }
@@ -151,4 +154,34 @@ export const getHeaviestBucket = (buckets: Bucket[]): Bucket | undefined => {
             return loc;
         }
     });
+}
+
+
+export const addSprintsToBucket = (buckets: Bucket[], pointsPerSprint: number): void => {
+    const issues = getAllCapturedIssues(buckets);
+
+    let i = 0;
+
+    const columns: string[] = [];
+    const csvJson: unknown[] = [];
+
+    while(issues.length) {
+        if (i > 100) {
+            console.error(columns, csvJson, issues);
+            throw new Error("Unexpected infinite loop");
+        }
+
+        const filteredIssues = issues.filter(issue => issue.weightBefore < pointsPerSprint * (i + 1) && issue.weightBefore >= pointsPerSprint * i);
+        
+        filteredIssues.forEach(issue => {
+            issue.sprint = i + 1;//`${i}`.padStart(3)
+            issue.value.sprint = i + 1;//`${i}`.padStart(3)
+        });
+
+        if (!filteredIssues.length) {
+            break;
+        }
+
+        i++;
+    }
 }

@@ -4,6 +4,7 @@ import { Bucket, CapturedIssue, getAllCapturedIssues, getArrayFromMap2, getHeavi
 import { combineLatest, from, map, Observable, startWith, Subject, switchMap, tap } from 'rxjs';
 import { shareReplay } from 'rxjs/operators';
 
+const DEVELOPER_COUNT = 10;
 const POINTS_PER_SPRINT = 6;
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
@@ -55,7 +56,7 @@ export class AppComponent {
         const source$ = this.filesUploaded.pipe(
             tap(() => this.isLoading = true),
             switchMap(file => from(file[0].text())),
-            map((value) => getScheduleFromCsv(value, 10)),
+            map((value) => getScheduleFromCsv(value, DEVELOPER_COUNT, POINTS_PER_SPRINT)),
             tap(_ => {
                 // https://material.io/design/color/the-color-system.html#tools-for-picking-colors
 
@@ -77,7 +78,7 @@ export class AppComponent {
                     this.epicColors[key] = colors[index % colors.length];
                 });
             }),
-            tap(console.log),
+            tap(x => console.log(x)),
             tap(() => this.isLoading = false),
             shareReplay(1),
         );

@@ -15,8 +15,10 @@ export const getIssue = (rawIssue: RawIssue): Issue => {
         console.warn("Unexpected issue has no points, going to default to .5pt");
     }
 
+    const { key, priority, summary, type, epic } = rawIssue;
+
     return {
-        ...rawIssue,
+        key, priority, summary, type, epic,
         points: pointsHasIssues ? DEFAULT_POINTS : points,
         dependencies: new Map<string, Issue>(),
         nestedDependencies: new Map<string, Issue>(),

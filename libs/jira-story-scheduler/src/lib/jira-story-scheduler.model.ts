@@ -34,6 +34,7 @@ export interface Issue {
     dependencyOf: IssueMap;
     nestedDependencyOf: IssueMap;
     dependencyKeys: string[];
+    sprint?: number;
 }
 
 export type IssueMap = Map<string, Issue>;
@@ -43,6 +44,7 @@ export interface CapturedIssue {
     value: Issue;
     weightBefore: number;
     weightAfter: number;
+    sprint: number;
 }
 
 export interface Bucket {
