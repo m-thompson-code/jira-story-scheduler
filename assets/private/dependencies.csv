@@ -1,63 +1,41 @@
 key,points,priority,summary,sprint,assignee,status,epic,type,dependencies
-MON-101287,8,Medium,Overall Dropdown Reset Behavior,,mthompson,To Do,,Epic,MON-101411
-MON-101290,5,Medium,Enrollment Settings Dropdown,Shop Page Rewrite: Sprint 14,mpatel,To Do,MON-101287,Story,"MON-101296, MON-101294, MON-101292, MON-101411 "
-MON-101292,1,Medium,Proper Riders dropdown reset behavior,Shop Page Rewrite: Sprint 14,mpatel,To Do,MON-101287,Story,"MON-101294, MON-101296, MON-101411 "
-MON-101294,1,Medium,Proper Benefit Amounts dropdown reset behavior,Shop Page Rewrite: Sprint 13,mpatel,To Do,MON-101287,Story,MON-101411
-MON-101296,1,Medium,Proper Elimination Period Dropdown reset behavior,Shop Page Rewrite: Sprint 13,mpatel,To Do,MON-101287,Story,MON-101294
+MON-101287,8,Medium,Overall Dropdown Reset Behavior,,mthompson,To Do,,Epic,
+MON-101290,5,Medium,Enrollment Settings Dropdown,Shop Page Rewrite: Sprint 14,mpatel,To Do,MON-101287,Story,"MON-101296, MON-101294, MON-101292"
+MON-101292,1,Medium,Proper Riders dropdown reset behavior,Shop Page Rewrite: Sprint 14,mpatel,To Do,MON-101287,Story,"MON-101294, MON-101296"
+MON-101294,1,Medium,Proper Benefit Amounts dropdown reset behavior,Shop Page Rewrite: Sprint 14,mpatel,To Do,MON-101287,Story,
+MON-101296,1,Medium,Proper Elimination Period Dropdown reset behavior,Shop Page Rewrite: Sprint 14,mpatel,In Progress,MON-101287,Story,MON-101294
 MON-101400,,Medium,Old Shop / New Shop Integration,,ysarjapur,To Do,,Epic,
-MON-101407,2,Medium,Frontend needs to route based on Config,Shop Page Rewrite: Sprint 12,tperumandla,Dev Testing Passed,MON-101400,Story,
-MON-101409,1,Low,Merge into develop branch,Shop Page Rewrite: Sprint 15,sravichandran,To Do,MON-101400,Story,"MON-101411,MON-72055,MON-72169,MON-72171,MON-72181,MON-72183,MON-72185,MON-76242,MON-76244,MON-98171"
-MON-101411,2,High,Merge into QA5,Shop Page Rewrite: Sprint 13,sravichandran,In Progress,MON-101400,Story,MON-101407
-MON-101413,1,Low,Merge into release,Shop Page Rewrite: Sprint 14,sravichandran,To Do,MON-101400,Story,"MON-101409, MON-101411, MON-72055,MON-72169,MON-72171,MON-72181,MON-72183,MON-72185,MON-76242,MON-76244,MON-98171"
-MON-101415,3,Medium,Improve pipelines to better handle cache for front end,Shop Page Rewrite: Sprint 14,,To Do,MON-101400,Story,
-MON-107963,2,High,MON-74669_MON-SBX_Payroll/NY/Direct_Buyup > Benefit amount mismatch for “Cancer Screening and Annual Care Benefit Rider Buy Up” is there between SBX and Dev,Shop Page Rewrite: Sprint 12,knelly,In Progress,MON-72171,Bug,MON-74669
-MON-108198,2,Medium,Add  Bucket Plans to Cart,Shop Page Rewrite: Sprint 13,sharish,To Do,MON-72185,Story,
-MON-116183,1,Medium,SBX - can't add Whole Life to cart & Juvenile Products are not displayed,Shop Page Rewrite: Sprint 13,sravichandran,To Do,MON-76242,Bug,
-MON-116259,2,High,"In SBX env, at shop page, After completing ""End Coverage"" we are not navigating back to shop page. Empty page is showing.",Shop Page Rewrite: Sprint 13,skumar7,In Progress,MON-76242,Bug,
-MON-116271,1,High,TODOS - [Plan Offering Pricing] Stackable Plans,Shop Page Rewrite: Sprint 14,vkalavakuru,To Do,MON-76244,Story,
-MON-116274,0.5,High,TODOS - [Plan Offering Pricing] Juvenile Plans,Shop Page Rewrite: Sprint 14,mpatel,To Do,MON-76244,Story,
-MON-116277,0.5,Low,TODOS - [Plan Offering Pricing] Types/Code Quality,Shop Page Rewrite: Sprint 14,mthompson,To Do,MON-76244,Story,
-MON-116458,1,Medium,SBX - Shop page not moved to respective Plan after selecting plan from cart,Shop Page Rewrite: Sprint 13,mthompson,In Progress,MON-76242,Bug,
-MON-116509,1,High,MON-SBX_Additional unit/Buyup_Payroll/Direct/NY_Cost is not coming for Enrolled plan card,Shop Page Rewrite: Sprint 12,kgupta,Ready to Test,MON-76242,Bug,
-MON-116581,0.5,Medium,SBX-Employer Contributions price is not displayed correct for Hospital product,Shop Page Rewrite: Sprint 13,dluz,To Do,MON-76242,Bug,
-MON-116582,1,Critical,MON-SBX_Whole Life/Term Life/Juvenile Term Life/Juvenile Whole Life_not able to enroll Direct users for stackable plans.,Shop Page Rewrite: Sprint 12,eaboudi,Ready to Test,MON-76242,Bug,
-MON-116603,1,Medium,"In SBX env, at shop page, at settings, in ""Coverage dates"" drop down the ""Reset"" link is missing. Then Reset link is not resetting the coverage start date.",,jsaha,To Do,MON-76242,Bug,
-MON-116635,1,Medium,SBX-Pricing for Long Term Disability product is not coming,,jsaha,To Do,MON-76242,Bug,
-MON-116680,1,Medium,SBX-Not able to approve end coverage request,,dbhushan,To Do,MON-76242,Bug,
-MON-117323,1,High,Price not matching in cart and in the plan card - tobacco yes in the enrollment flow scenario,,stabreez,Ready to Work,MON-76242,Bug,
-MON-117326,,High,On the Job rider premium is coming empty for Enrolled STD plan,,kpalaniswamy,To Do,MON-76242,Bug,
+MON-101409,1,Low,Merge into develop branch,Shop Page Rewrite: Sprint 15,sravichandran,To Do,MON-101400,Story,"MON-72055,MON-72169,MON-72171,MON-72183,MON-72185,MON-76242,MON-76244,MON-98171, MON-101287"
+MON-101413,1,Low,Merge into release,Shop Page Rewrite: Sprint 15,sravichandran,To Do,MON-101400,Story,"MON-101409, MON-72055,MON-72169,MON-72171,MON-72183,MON-72185,MON-76242,MON-76244,MON-98171"
+MON-101415,3,Medium,Improve pipelines to better handle cache for front end,Shop Page Rewrite: Sprint 14,mthompson,To Do,MON-101400,Story,
+MON-107963,2,High,MON-74669_MON-SBX_Payroll/Direct_Buyup > Benefit amount mismatch for “Cancer Screening and Annual Care Benefit Rider Buy Up” is there between SBX and Dev,Shop Page Rewrite: Sprint 12,naggarwal,Ready to Test,MON-72171,Bug,MON-74669
+MON-108198,5,Medium,Add  Bucket Plans to Cart,Shop Page Rewrite: Sprint 14,sharish,Ready to Work,MON-72185,Story,
+MON-116603,1,Medium,"In SBX and QA5 envs, at shop page, at settings, in ""Coverage dates"" drop down the ""Reset"" link is missing. Then Reset link is not resetting the coverage start date.",Shop Page Rewrite: Sprint 14,mpatel,In Progress,MON-76242,Bug,
+MON-118081,2,High,"In QA5 env, after login through role 12 user, through ""Agent self enrollment"" option, we could not navigate to MMP portal home page. API error is showing.",Shop Page Rewrite: Sprint 13,rporwal,To Do,MON-76242,Bug,
+MON-118320,3,Medium,Locking the shopping cart,Shop Page Rewrite: Sprint 13,tperumandla,Dev Testing Passed,MON-76242,Story,
+MON-118957,1,Medium,SBX-Not able to add products to cart for an Employee when Occupation Class is selected as A,Shop Page Rewrite: Sprint 13,dluz,In Progress,MON-76242,Bug,
+MON-119036,,Medium,SBX - Direct account - intermittent issue in importing valid policy member,,jsaha,To Do,,Bug,
+MON-119072,1,High,MON-SBX_MON-74742_ Aflac Reinstatements - Optional_Expiresafter date is getting displayed as past date in shop page under network tab.,Shop Page Rewrite: Sprint 13,rsingh2,Ready to Test,MON-72169,Bug,
+MON-119165,1,High,QA5 - MPP - Coverage Column in Employees list does not show enrolled coverage,,eaboudi,To Do,,Bug,
+MON-119195,,Medium,Create component store for annual contribution amount,Shop Page Rewrite: Sprint 14,dbhushan,In Progress,,Sub-task,
+MON-119259,2,High,Merge into QA5,,sravichandran,To Do,MON-101400,Story,
+MON-119262,1,High,SBX_Riders are not loading for Whole life and Term Life,Shop Page Rewrite: Sprint 14,sravichandran,To Do,MON-98171,Bug,
+MON-119264,1,High,SBX_Aflac Life Policy Fee not coming for Whole life and Term Life,Shop Page Rewrite: Sprint 14,sravichandran,To Do,MON-98171,Bug,
 MON-72055,,Medium,Engineering Architecture Setup,,dluz,To Do,,Epic,
 MON-72169,13,Medium,Reinstatement,,cguria,Development,,Epic,
 MON-72171,9,Medium,Additional Units / Buyups,,cguria,Development,,Epic,
-MON-72181,8,Medium,Stackable Plan,,cguria,Development,,Epic,
 MON-72183,10,Medium,Juvenile Plans / Dependent Only Plans,,cguria,Development,,Epic,
-MON-72185,8,Medium,Bucket Plans,,tperumandla,To Do,,Epic,
-MON-72790,5,Medium,AI - Additional Units,Shop Page Rewrite: Sprint 11,cguria,Dev Testing Passed,MON-72171,Story,
-MON-72794,5,Medium,Juvenile Life Plans,Shop Page Rewrite: Sprint 13,mpatel,Ready to Work,MON-72183,Story,"MON-75001, MON-74740"
-MON-72796,5,Medium,Aflac Reinstatements - Mandatory,Shop Page Rewrite: Sprint 13,vkalavakuru,Ready to Work,MON-72169,Story,MON-74783
-MON-72810,5,Medium,Display Bucket Plans,Shop Page Rewrite: Sprint 13,dbhushan,Ready to Work,MON-72185,Story,"MON-74819, MON-74999"
-MON-74666,5,High,Stackable Plans with rider selection,Shop Page Rewrite: Sprint 7,mverma,Ready to Test,MON-72181,Story,
-MON-74669,5,Medium,AI - Buy-ups,Shop Page Rewrite: Sprint 12,dbhushan,In Progress,MON-72171,Story,MON-72790
-MON-74672,3,Medium,AG Buyups,Shop Page Rewrite: Sprint 12,vdhamodharan,Ready to Test,MON-72171,Story,"MON-72790, MON-74669"
-MON-74740,3,Medium,Update dependent age,Shop Page Rewrite: Sprint 12,mverma,Ready to Test,MON-72183,Story,MON-75001
-MON-74742,3,Medium,Aflac Reinstatements - Optional,Shop Page Rewrite: Sprint 14,vkalavakuru,Ready to Work,MON-72169,Story,"MON-72796, MON-74783"
-MON-74783,2,High,Tech Debt: Basic UI layout,Shop Page Rewrite: Sprint 12,stabreez,Ready to Test,MON-72169,Story,
-MON-74819,3,High,Tech Debt: Basic UI layout,Shop Page Rewrite: Sprint 13,stabreez,In Progress,MON-72185,Story,
-MON-74999,3,High,Tech Debt: NgRx Actions + Effects + Reducer + Selectors,Shop Page Rewrite: Sprint 13,sharish,To Do,MON-72185,Story,
-MON-75001,3,High,Tech Debt: NgRx Actions + Effects + Reducer + Selectors,Shop Page Rewrite: Sprint 12,mpatel,Ready to Work,MON-72183,Story,
+MON-72185,8,Medium,Bucket Plans,,tperumandla,Development,,Epic,
+MON-72794,5,Medium,Juvenile Life Plans,Shop Page Rewrite: Sprint 13,cguria,Dev Testing Passed,MON-72183,Story,
+MON-72796,5,Medium,Aflac Reinstatements - Mandatory,Shop Page Rewrite: Sprint 13,kgupta,Ready to Test,MON-72169,Story,
+MON-74669,5,Medium,AI - Buy-ups,Shop Page Rewrite: Sprint 12,naggarwal,Ready to Test,MON-72171,Story,
+MON-74742,3,Medium,Aflac Reinstatements - Optional,Shop Page Rewrite: Sprint 14,rsingh2,Ready to Test,MON-72169,Story,MON-72796
+MON-76239,,Medium,Performance Testing Defects for Shop Page Rewrite,,vsubramanian,To Do,,Epic,
 MON-76242,,Medium,Regression Testing Defects for Shop Page Rewrite,,vsubramanian,To Do,,Epic,
 MON-76244,,Medium,Tech Debt Tickets for Shop Page Rewrite,,ysarjapur,To Do,,Epic,
-MON-76407,3,Medium,Tech Debt: Do not call getApprovalRequests during load of Shop page,Shop Page Rewrite: Sprint 14,sharish,To Do,MON-76244,Story,
-MON-78237,5,Critical,Previous user enrollment state getting persisted for headset enrollment,Shop Page Rewrite: Sprint 13,tperumandla,In Progress,MON-76242,Bug,
-MON-84711,3,Medium,Performance Improvement - planOfferings call optimization for each product.,Shop Page Rewrite: Sprint 14,vkalavakuru,In Progress,MON-76239,Story,
-MON-91085,3,Medium,AG Reductions,Shop Page Rewrite: Sprint 12,eaboudi,Ready to Test,MON-72171,Story,"MON-72790, MON-74669, MON-74672"
-MON-97254,3,High,"Correct Zero State message and 'Build benefits offering' button must be shown when Benefit Offering is not set up for the account, and user clicks Shop for an employee",Shop Page Rewrite: Sprint 12,knelly,Ready to Work,MON-76242,Bug,
-MON-98007,2,Medium,TODOS - [Plan Year],Shop Page Rewrite: Sprint 14,agangadhar,Ready to Work,MON-76244,Story,MON-74666
-MON-98066,3,High,TODOS - [Riders],Shop Page Rewrite: Sprint 14,mthompson,To Do,MON-76244,Story,MON-74666
-MON-98075,1,Medium,TODOS - [Plan Offering Pricing] Tobacco,Shop Page Rewrite: Sprint 14,mthompson,To Do,MON-76244,Story,"MON-72181, MON-98175, MON-72183"
-MON-98076,5,Medium,TODOS - [Products Container],Shop Page Rewrite: Sprint 14,ysarjapur,Ready to Work,MON-76244,Story,
-MON-98169,3,Medium,"Order plans in a product by display order, name",Shop Page Rewrite: Sprint 14,dluz,Ready to Test,MON-76242,Story,
-MON-98171,12,Medium,Sync effort: Aflac Life policy fee and tobacco status,,tperumandla,To Do,,Epic,
-MON-98174,5,Medium,Aflac Policy Fee,Shop Page Rewrite: Sprint 13,nchavan,Ready to Work,MON-98171,Story,
-MON-98175,5,Medium,Tobacco status,Shop Page Rewrite: Sprint 13,agangadhar,In Progress,MON-98171,Story,
-MON-76239,,Medium,Performance Testing Defects for Shop Page Rewrite,,vkalavakuru,,,Epic,
+MON-84711,3,Low,Performance Improvement - planOfferings call optimization for each product.,Shop Page Rewrite: Sprint 14,sharish,Ready to Work,MON-76239,Story,
+MON-97254,3,High,"Correct Zero State message and 'Build benefits offering' button must be shown when Benefit Offering is not set up for the account, and user clicks Shop for an employee",Shop Page Rewrite: Sprint 13,knelly,In Review,MON-76242,Bug,
+MON-98007,2,Medium,TODOS - [Plan Year],Shop Page Rewrite: Sprint 14,agangadhar,In Progress,MON-76244,Story,
+MON-98066,3,High,TODOS - [Riders],Shop Page Rewrite: Sprint 14,sjha,In Progress,MON-76244,Story,
+MON-98171,12,Medium,Sync effort: Aflac Life policy fee and tobacco status,,tperumandla,Development,,Epic,
+MON-98174,5,Medium,Aflac Policy Fee,Shop Page Rewrite: Sprint 13,mverma,Ready to Test,MON-98171,Story,
